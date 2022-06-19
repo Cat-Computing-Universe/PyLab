@@ -1,0 +1,17 @@
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bringing Python to Broswer!</title>			
+  <link rel="stylesheet" href="/css/main.css">			
+  <script defer src="https://pyscript.net/alpha/pyscript.js"></script>			
+</head>
+<body>
+  <py-repl output="fd">
+  def factorial(n):
+    if n==0:
+      return 1
+    return n*factorial(n-1)
+  print(factorial(8))
+  </py-repl>
+  <div><pre id="fd"></pre></div>
+</body>
