@@ -69,6 +69,18 @@
     background: #f5f5f5;
     overflow-y: hidden;
   }
+
+  @media (max-width:700px){
+    .app {
+      height: 100%;
+    }
+  }
+
+  @media (min-width:1000px){
+    .app {
+      height: 60%;
+    }
+  }
   
   .hs > li,
   .item {
