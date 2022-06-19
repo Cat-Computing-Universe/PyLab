@@ -11,38 +11,24 @@
     </head>
     <body>
       <py-repl output="mpl">
-import matplotlib.pyplot as plt
-import matplotlib.tri as tri
 import numpy as np
-
-# First create the x and y coordinates of the points.
-n_angles = 36
-n_radii = 8
-min_radius = 0.25
-radii = np.linspace(min_radius, 0.95, n_radii)
-
-angles = np.linspace(0, 2 * np.pi, n_angles, endpoint=False)
-angles = np.repeat(angles[..., np.newaxis], n_radii, axis=1)
-angles[:, 1::2] += np.pi / n_angles
-
-x = (radii * np.cos(angles)).flatten()
-y = (radii * np.sin(angles)).flatten()
-z = (np.cos(radii) * np.cos(3 * angles)).flatten()
-
-# Create the Triangulation; no triangles so Delaunay triangulation created.
-triang = tri.Triangulation(x, y)
-
-# Mask off unwanted triangles.
-triang.set_mask(np.hypot(x[triang.triangles].mean(axis=1),
-                         y[triang.triangles].mean(axis=1)) < min_radius)
-
-fig1, ax1 = plt.subplots()
-ax1.set_aspect('equal')
-tpc = ax1.tripcolor(triang, z, shading='flat')
-fig1.colorbar(tpc)
-ax1.set_title('tripcolor of Delaunay triangulation, flat shading')
-
-fig1
+from matplotlib import pyplot as plt
+x = np.linspace(0,1,100)
+y0 = np.sin(2*np.pi*x)
+y1 = 0.5*np.sin(6*np.pi*x)
+y2 = 0.25*np.sin(10*np.pi*x)
+y3 = 0.125*np.sin(14*np.pi*x)
+fig,(ax0,ax1) = plt.subplots(2,1)
+ax0.plot(x,y0+y1+y2+y3)
+ax0.set(xlabel='x',xlim=(0,1),ylim=(-1.1,1.1),title='Signal and its harmonics')
+ax0.grid(True)
+ax1.plot(x,y0)
+ax1.plot(x,y1)
+ax1.plot(x,y3)
+ax1.plot(x,y3)
+ax1.set(xlabel='x',xlim=(0,1),ylim=(-1.1,1.1))
+ax1.grid(True)
+fig
       </py-repl>
       <div id="mpl"></div>
     </body>
