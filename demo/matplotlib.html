@@ -33,13 +33,13 @@ ax1.grid(True)
 fig
       </py-repl>
       <div style="justify-content: center;display: flex;align-items: center;">
-        <button type="button">Clear</button>
+        <button class="clear_button" type="button">Clear</button>
       </div>
       <div style="justify-content: center;display: flex;align-items: center;">
         <div id="output"></div>
       </div>
       <script>
-        $("#clear_button").click(function() {
+        $(".clear_button").click(function() {
           $( "#output" ).empty();
         });
       </script>

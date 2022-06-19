@@ -22,14 +22,14 @@ print("Performing LU Decomposition of ", x)
 print("P is ", P, "L is ", L, "U is ", U)
   </py-repl>
   <div style="justify-content: center;display: flex;align-items: center;">
-    <button type="button">Clear</button>
+    <button class="clear_button" type="button">Clear</button>
   </div>
   <div style="justify-content: center;display: flex;align-items: center;">
     <pre id="output"></pre>
   </div>
   <footer id="err-div" class="bg-red-700 text-white text-center border-t-4 border-green-500 fixed inset-x-0 bottom-0 p-4 hidden">
   <script>
-    $("#clear_button").click(function() {
+    $(".clear_button").click(function() {
       $( "#output" ).empty();
     });
   </script>
