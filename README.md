@@ -6,3 +6,5 @@ Natively supports Python, and all the great science computing packages that come
 
 ## A online, browser based Python envrioment that is customized for Data Science 
 With foundations coming from PyScript, a project powered by Scientific Computation leader Anaconda 
+
+![](imgs/pyscript.png)
