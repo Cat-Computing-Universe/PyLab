@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
     <link rel="stylesheet" href="repl.css" />
-
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
     <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
   </head>
 
@@ -32,5 +32,10 @@
       </div>
       <footer id="err-div" class="bg-red-700 text-white text-center border-t-4 border-green-500 fixed inset-x-0 bottom-0 p-4 hidden">
     </footer>
+    <script>
+      $("#clear_button").click(function() {
+        $( "#output" ).empty();
+      });
+    </script>
   </body>
 </html>

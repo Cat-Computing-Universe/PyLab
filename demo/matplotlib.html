@@ -5,6 +5,7 @@
     <link rel="icon" type="image/x-icon" href="./favicon.png">
     <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
     <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
     <link rel="stylesheet" href="demo.css" />	
     <py-env>
       - matplotlib
@@ -37,5 +38,10 @@ fig
       <div style="justify-content: center;display: flex;align-items: center;">
         <div id="output"></div>
       </div>
+      <script>
+        $("#clear_button").click(function() {
+          $( "#output" ).empty();
+        });
+      </script>
     </body>
 </html>
