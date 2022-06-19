@@ -82,7 +82,30 @@
     background-size: cover;
     border-radius: 8px;
   }
+
+  .item a {
+    background-color: #f5f5f5;
+  }
+
+  a:link {
+    text-decoration: none;
+    color: #456173;
+  }
   
+  a:visited {
+    text-decoration: none;
+    color: #456173;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    color: rgb(0, 0, 0);
+  }
+  
+  a:active {
+    text-decoration: underline;
+    color: rgb(0, 0, 0);
+  }
   
   
   .no-scrollbar {
