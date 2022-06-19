@@ -1,5 +1,9 @@
 Github Pages Website: 
 https://bboczeng.github.io/PyLab/
+Plotting Demo:
+https://bboczeng.github.io/PyLab/demo/plot.html
+Cell Eval Demo:
+https://bboczeng.github.io/PyLab/demo/repl.html
 
 # PyLab
 A **totally, totally, totally** no install, no download, no config web based scientific computing platform that actually supports Python 
