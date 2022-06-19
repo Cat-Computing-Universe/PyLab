@@ -1,5 +1,5 @@
-Cell Eval Demo:
-https://bboczeng.github.io/PyLab/demo/repl.html
+Folium Demo:
+https://bboczeng.github.io/PyLab/demo/folium.html
 
 Factorial Demo:
 https://bboczeng.github.io/PyLab/demo/factorial.html
