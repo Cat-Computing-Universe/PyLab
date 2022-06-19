@@ -1,11 +1,6 @@
-Folium Unemployment Demo:
-https://bboczeng.github.io/PyLab/demo/folium.html
+Please visit this website for demo:
 
-Factorial Demo:
-https://bboczeng.github.io/PyLab/demo/factorial.html
-
-Plotting Demo:
-https://bboczeng.github.io/PyLab/demo/matplotlib.html
+https://bboczeng.github.io/PyLab/
 
 # PyLab
 A **totally, totally, totally** no-install, no-download, no-config web-based scientific computing platform that actually supports Python. 
