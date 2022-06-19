@@ -14,7 +14,7 @@
   <py-repl output="fd", std-err="err-div">
 import numpy as np
 import scipy.linalg as la
-x = numpy.random.rand(3,3)
+x = np.random.rand(3,3)
 print("Performing LU Decomposition of ", x)
 (P, L, U) = la.lu(x)
 print("P is ", P, "L is ", L, "U is ", U)
