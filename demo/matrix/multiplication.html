@@ -11,11 +11,23 @@
 <body>
   <h1 class="font-semibold text-2xl ml-5">猫猫实验室 PyLab</h1>
   <py-repl output="fd", std-err="err-div">
-def factorial(n):
-  if n==0:
-    return 1
-  return n*factorial(n-1)
-print(factorial(8))
+import numpy as np
+
+# 1. Initialize matrix with a 2D array.
+A = np.matrix([[1,2,3],[4,5,6],[7,8,9]])
+print("Matrix a is: \n", A)
+
+# 2. You could also create an N-by-1 matrix with 1D array
+print("Another matrix is: \n", np.matrix([1,2,3,4]))
+
+# 3. Also there are some useful built-in functions to create different kinds of matrix
+print("Creating a 3-by-3 eye matrix:\n", np.eye(3))
+print("Creating a random 2-by-3 matrix:\n", np.random.rand(2,3))
+print("Creating a matrix of ones:\n", np.ones(2))
+print("Creating a matrix of zeros:\n", np.zeros(2))
+
+# 4. You can also create a sequence of number starting with 1 ending with 20 and increasing with step 3, then reshape it as a 3-by-3 matrix
+print("Matrix c is:\n", np.arange(1,27,3).reshape(3,3))
   </py-repl>
   <div style="justify-content: center;display: flex;align-items: center;"><pre id="fd"></pre></div>
   <footer id="err-div" class="bg-red-700 text-white text-center border-t-4 border-green-500 fixed inset-x-0 bottom-0 p-4 hidden">
