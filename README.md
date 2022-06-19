@@ -1,6 +1,9 @@
 Cell Eval Demo:
 https://bboczeng.github.io/PyLab/demo/repl.html
 
+Factorial Demo:
+https://bboczeng.github.io/PyLab/demo/factorial.html
+
 Plotting Demo:
 https://bboczeng.github.io/PyLab/demo/plot.html
 
