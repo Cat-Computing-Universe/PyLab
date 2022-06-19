@@ -16,3 +16,8 @@
     border-top: 1px solid lightgray;
     background-color: white;
   }
+
+.outcell {
+    width: 100%;
+    margin: 2rem;
+}

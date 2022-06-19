@@ -7,17 +7,12 @@
     padding: 0.25rem;
   }
 
-.p-4 {
-    width: 100%;
-    margin: 2rem;
-}
-
-  #output > div:first-child {
+#output > div:first-child {
     border-top: 1px solid lightgray;
     background-color: lightgray;
-  }
+}
 
-  #output > div:nth-child(even) {
+#output > div:nth-child(even) {
     border-top: 1px solid lightgray;
     background-color: white;
-  }
+}
