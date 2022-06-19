@@ -34,8 +34,7 @@ triang = tri.Triangulation(x, y)
 
 # Mask off unwanted triangles.
 triang.set_mask(np.hypot(x[triang.triangles].mean(axis=1),
-                         y[triang.triangles].mean(axis=1))
-                < min_radius)
+                         y[triang.triangles].mean(axis=1)) < min_radius)
 
 fig1, ax1 = plt.subplots()
 ax1.set_aspect('equal')
