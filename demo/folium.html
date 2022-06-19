@@ -5,13 +5,14 @@
     <link rel="icon" type="image/x-icon" href="./favicon.png">
     <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
     <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <link rel="stylesheet" href="demo.css" />	
     <py-env>
       - folium
       - pandas
     </py-env>
     </head>
     <body>
-      <py-repl output="folium">
+      <py-repl output="output">
 import folium
 import json
 import pandas as pd
@@ -44,6 +45,6 @@ folium.LayerControl().add_to(m)
 
 m
       </py-repl>
-      <div id="folium" style="width: 100%; height: 100%"></div>
+      <div id="output" style="width: 100%; height: 100%"></div>
     </body>
 </html>

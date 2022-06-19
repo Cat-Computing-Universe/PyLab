@@ -1,0 +1,18 @@
+#output > div {
+    font-family: 'monospace';
+    background-color: lightgray;
+    border: 1px solid lightgray;
+    border-top: 0;
+    font-size: 0.75rem;
+    padding: 0.25rem;
+  }
+
+  #output > div:first-child {
+    border-top: 1px solid lightgray;
+    background-color: lightgray;
+  }
+
+  #output > div:nth-child(even) {
+    border-top: 1px solid lightgray;
+    background-color: white;
+  }

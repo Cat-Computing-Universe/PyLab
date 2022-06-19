@@ -4,13 +4,14 @@
   <title>PyLab Execution Example</title>		
   <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />		
   <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+  <link rel="stylesheet" href="../demo.css" />	
   <py-env>
    - numpy
   </py-env>
 </head>
 <body>
   <h1 class="font-semibold text-2xl ml-5">猫猫实验室 PyLab</h1>
-  <py-repl output="fd", std-err="err-div">
+  <py-repl output="output", std-err="err-div">
 import numpy as np
 
 # 1. Initialize matrix with a 2D array.
@@ -29,6 +30,10 @@ print("Creating a matrix of zeros:\n", np.zeros(2))
 # 4. You can also create a sequence of number starting with 1 ending with 20 and increasing with step 3, then reshape it as a 3-by-3 matrix
 print("Matrix c is:\n", np.arange(1,27,3).reshape(3,3))
   </py-repl>
-  <div style="justify-content: center;display: flex;align-items: center;"><pre id="fd"></pre></div>
+  <div style="justify-content: center;display: flex;align-items: center;">
+    <button type="button">Clear</button>
+  </div>
+  <div style="justify-content: center;display: flex;align-items: center;">
+    <button type="button">Clear</button>
   <footer id="err-div" class="bg-red-700 text-white text-center border-t-4 border-green-500 fixed inset-x-0 bottom-0 p-4 hidden">
 </body>

@@ -5,12 +5,13 @@
     <link rel="icon" type="image/x-icon" href="./favicon.png">
     <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
     <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <link rel="stylesheet" href="demo.css" />	
     <py-env>
       - matplotlib
     </py-env>
     </head>
     <body>
-      <py-repl output="mpl">
+      <py-repl output="output">
 import numpy as np
 from matplotlib import pyplot as plt
 x = np.linspace(0,1,100)
@@ -30,6 +31,11 @@ ax1.set(xlabel='x',xlim=(0,1),ylim=(-1.1,1.1))
 ax1.grid(True)
 fig
       </py-repl>
-      <div style="justify-content: center;display: flex;align-items: center;"><div id="mpl"></div></div>
+      <div style="justify-content: center;display: flex;align-items: center;">
+        <button type="button">Clear</button>
+      </div>
+      <div style="justify-content: center;display: flex;align-items: center;">
+        <div id="output"></div>
+      </div>
     </body>
 </html>
