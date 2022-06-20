@@ -10,9 +10,7 @@ https://bboczeng.github.io/PyLab/
 PyLab natively supports Python, and all great science computing packages in it: Numpy, Scikit-learn, Matplotlib, Pytorch(\*), Tensorflow(\*), etc. 
 
 ## Demos
-* [Folium Unemployment](https://bboczeng.github.io/PyLab/demo/folium.html)
-* [Factorial](https://bboczeng.github.io/PyLab/demo/factorial.html)
-* [Plotting](https://bboczeng.github.io/PyLab/demo/matplotlib.html)
+* [REPL Playground](https://bboczeng.github.io/PyLab/demo/repl.html)
 
 ## Acknowledgments 
 PyLab is powered by PyScript, a project powered by Scientific Computation leader Anaconda 
