@@ -7,7 +7,7 @@ Please visit this website for demo:
 https://bboczeng.github.io/PyLab/
 
 ## Life is short. Use Python. 
-PyLab natively supports Python, and all great science computing packages in it: Numpy, Scikit-learn, Matplotlib, Pytorch(\*), Tensorflow(\*), etc. 
+PyLab natively supports Python, and all great science computing packages in it: Numpy, Scipy, Scikit-learn, Matplotlib, Pytorch(\*), Tensorflow(\*), etc. 
 
 ## Demos
 * [REPL Playground](https://bboczeng.github.io/PyLab/demo/repl.html)
