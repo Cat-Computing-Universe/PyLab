@@ -1,49 +1,33 @@
-import { GPU } from 'https://cdn.jsdelivr.net/npm/gpu.js@latest/dist/gpu-browser.min.js'
-
-export class GPUMatrixMultiplier {
-    matSizeI = 1;
-    matSizeJ = 1;
-    matSizeK = 1;
-    matrixA = [];
-    matrixB = [];
-
-    matrixResult = [];
-
-    constructor(a, b) {
-        this.gpu = new GPU();
-        console.log(this.gpu);
-        // add numpy matrix conversion here
-        // converting for Matrix A, B
-        for (let y = 0; y < matASizeI; y++) {
-            this.matrixA.push([])
-            for (let x = 0; x < matASizeJ; x++) {
-              const value = parseInt((Math.random() * 10).toString())
-              this.matrixA[y].push(value)
-            }
+function gpumatmul(a, b) {
+    const gpu = new GPU();
+    console.log(a);
+    console.log(b);
+    // add numpy matrix conversion here
+    // converting for Matrix A, B
+    for (let y = 0; y < matASizeI; y++) {
+        this.matrixA.push([])
+        for (let x = 0; x < matASizeJ; x++) {
+            const value = parseInt((Math.random() * 10).toString())
+            this.matrixA[y].push(value)
         }
-
-        for (let y = 0; y < matBSizeI; y++) {
-            this.matrixB.push([])
-            for (let x = 0; x < matBSizeJ; x++) {
-              const value = parseInt((Math.random() * 10).toString())
-              this.matrixB[y].push(value)
-            }
-        }
-
-        this.matrixResult = [];
     }
 
-    multiplyMatrix() {
-        const gpu = this.gpu;
-        const multiplyMatrix = gpu.createKernel(function (a, b) {
-          let sum = 0;
-          for (let i = 0; i < this.matSizeJ; i++) {
+    for (let y = 0; y < matBSizeI; y++) {
+        this.matrixB.push([])
+        for (let x = 0; x < matBSizeJ; x++) {
+            const value = parseInt((Math.random() * 10).toString())
+            this.matrixB[y].push(value)
+        }
+    }
+    this.matrixResult = [];
+    const multiplyMatrix = gpu.createKernel(function (a, b) {
+        let sum = 0;
+        for (let i = 0; i < this.matSizeJ; i++) {
             sum += a[this.thread.y][i] * b[i][this.thread.x];
-          }
-          return sum;
-        }).setOutput([this.matSizeI, this.matSizeK])
+        }
+        return sum;
+    }).setOutput([this.matSizeI, this.matSizeK])
 
-        this.matrixResult = multiplyMatrix(this.matrixA, this.matrixB);
-      }
+    return multiplyMatrix(this.matrixA, this.matrixB);
 
 }
