@@ -16,3 +16,11 @@ PyLab natively supports Python, and all great science computing packages in it: 
 PyLab is powered by PyScript, a project powered by Scientific Computation leader Anaconda 
 
 ![](imgs/pyscript.png)
+
+## License
+
+[GPL License v3.0](LICENSE)
+
+## Open Source
+
+[hedgehog-lab](https://github.com/Hedgehog-Computing/hedgehog-lab) with modification
