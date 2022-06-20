@@ -18,8 +18,9 @@ import time
 start_time = time.time()
 x = np.random.rand(6000,6000)
 y = np.random.rand(6000,6000)
-x * y
+z = x * y
 end_time = time.time()
+print(f"Result is: \n {z}")
 print(f"The execution time is: {end_time-start_time}")
   </py-repl>
   <div style="justify-content: right;display: flex;align-items: right;">
