@@ -19,14 +19,20 @@ from js import gpumatmul
 from pyodide import to_js
 import time
 import numpy as np
-        
+                
 start_time = time.time()
-x = np.random.rand(7000, 7000)
-y = np.random.rand(7000, 7000)
+x = np.random.rand(2000, 2000)
+y = np.random.rand(2000, 2000)
 z = gpumatmul(to_js(x), to_js(y))
 end_time = time.time()
+                
+print(f"The execution time of GPU is: {end_time-start_time}")
         
-print(f"The execution time is: {end_time-start_time}")
+start_time = time.time()
+z = x @ y
+end_time = time.time()
+        
+print(f"The execution time of CPU is: {end_time-start_time}")
     </py-repl>
     <div style="justify-content: right;display: flex;align-items: right;">
       <button class="button_reset" type="button">Clear Output</button>
