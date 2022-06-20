@@ -1,4 +1,4 @@
-$(".clear_button").click(function() {
+$(".button_reset").click(function() {
     $( "#output" ).empty();
   });
 
