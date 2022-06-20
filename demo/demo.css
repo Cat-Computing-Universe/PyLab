@@ -60,6 +60,7 @@
     opacity: 100 !important;
     bottom: -2rem !important;
     left: 0.25rem !important;
-    width: 20px !important;
+    width: 30px !important;
+    padding: 2px !important;
     position: absolute;
 }
