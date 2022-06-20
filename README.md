@@ -1,5 +1,5 @@
 
-# PyLab: An in-browser Python envrioment for Data Science 
+# PyLab: An in-browser Python environment for Data Science 
 A **totally, totally, totally** no-install, no-download, no-config in-browser scientific computing platform based on Python. 
 
 Please visit this website for demo:
