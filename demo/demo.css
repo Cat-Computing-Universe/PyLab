@@ -29,29 +29,10 @@
     margin: 4px 2px;
     transition-duration: 0.4s;
     cursor: pointer;
+    margin-right: 40px;
 }
   
 .button_reset:hover {
-    background-color: #4CAF50;
-    color: white;
-}
-
-.button_run {
-    background-color: white; 
-    color: black; 
-    border: 2px solid #4CAF50;
-    border-radius: 8px;
-    padding: 8px 8px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 12px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-}
-  
-.button_run:hover {
     background-color: #4CAF50;
     color: white;
 }
