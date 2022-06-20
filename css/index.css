@@ -73,6 +73,7 @@
   @media (max-width:700px){
     .app {
       height: 90%;
+      width: 100%;
     }
   }
   
