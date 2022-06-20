@@ -1,0 +1,23 @@
+{
+  "name": "@hedgehog/root",
+  "private": true,
+  "version": "0.0.0",
+  "license": "Apache-2.0",
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "lerna": "^3.22.1",
+    "patch-package": "^6.4.7",
+    "typescript": "^3.9.7"
+  },
+  "scripts": {
+    "init": "lerna add @hedgehog/core --scope @hedgehog/lab",
+    "dev:web": "lerna exec --scope @hedgehog/lab yarn start",
+    "build:core": "lerna exec --scope @hedgehog/core yarn build",
+    "watch": "lerna run --parallel watch",
+    "build": "lerna run build --stream",
+    "postinstall": "patch-package",
+    "vercel-build": "yarn global add gl node-gyp-build node-gyp"
+  }
+}
