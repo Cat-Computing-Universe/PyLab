@@ -1,1 +1,32 @@
-
+<html>
+  <head>
+    <title>PyLab Execution Example</title>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/x-icon" href="./favicon.png">
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <link rel="stylesheet" href="demo.css" />	
+    <py-env>
+      - matplotlib
+      - xgboost
+      - seaborn
+      - pandas
+      - numpy
+      - sklearn
+      - pandas_datareader
+    </py-env>
+    </head>
+    <body>
+      <py-repl id="onetimerepl" output="output">
+print("hello world")
+      </py-repl>
+      <div style="justify-content: right;display: flex;align-items: right;">
+        <button class="button_reset" type="button">Clear Output</button>
+      </div>
+      <div style="justify-content: center;display: flex;align-items: center;">
+        <div id="output" style="width: 100%;margin: 2rem;"></div>
+      </div>
+      <script src="demo.js"></script>
+    </body>
+</html>
