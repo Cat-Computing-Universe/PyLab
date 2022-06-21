@@ -16,13 +16,17 @@
     - numpy
     - scipy
     - matplotlib
+    - seaborn
+    - scikit-learn
   </py-env>
 
   <body>
       <h1 class="font-semibold text-2xl ml-5">The Cat Computing Universe: PyLab</h1>
       <div style="text-align: center">numpy, scipy and matplotlib all installed, may take longer. You can use Shift+Enter to run each cell.</div>
       <div>
-        <py-repl id="my-repl" auto-generate="true" std-out="output" std-err="err-div"> </py-repl>
+        <py-repl id="my-repl" auto-generate="true" std-out="output" std-err="err-div"> 
+print("Hello world!")
+        </py-repl>
       </div>
       <div style="justify-content: right;display: flex;align-items: right;">
         <button class="button_reset" type="button">Clear Output</button>
