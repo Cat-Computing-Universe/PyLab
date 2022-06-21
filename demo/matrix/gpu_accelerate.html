@@ -38,12 +38,11 @@ if test_cpu:
 
 start_time = time.time()
 z = gpumatmul(to_js(x), to_js(y))
-z = np.array(z.to_py())
 end_time = time.time()     
 
 print(f"The execution time of GPU is: {end_time-start_time}")
 
-print(z)
+print(np.array(z.to_py()))
                 
     </py-repl>
     <div style="justify-content: right;display: flex;align-items: right;">
