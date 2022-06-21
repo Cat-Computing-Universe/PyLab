@@ -15,6 +15,8 @@ PyLab natively supports Python, and all great science computing packages in it: 
 * More, see the [Front Page](https://cat-computing-universe.github.io/PyLab/)
 
 ## Acknowledgments 
-PyLab is powered by PyScript, a project powered by Scientific Computation leader Anaconda 
+PyLab is powered by PyScript, a project lead by Scientific Computation leader Anaconda
+
+PyLab GPU is based on GPU.js, a project lead by [GPU Rocks](https://gpu.rocks/#/)
 
 ![](imgs/pyscript.png)
