@@ -20,3 +20,4 @@ PyLab is powered by PyScript, a project lead by Scientific Computation leader An
 PyLab GPU is based on GPU.js, a project lead by [GPU Rocks](https://gpu.rocks/#/)
 
 ![](imgs/pyscript.png)
+![](imgs/gpujs.png)
