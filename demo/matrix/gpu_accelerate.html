@@ -20,9 +20,9 @@ from pyodide import to_js
 import time
 import numpy as np
 
-k_size =1000
+k_size = 1000
 
-test_cpu = False
+test_cpu = True
 
 print(f"Testing Matrix of size: {k_size}")
 
@@ -34,11 +34,16 @@ if test_cpu:
     z = x @ y
     end_time = time.time()
     print(f"The execution time of CPU is: {end_time-start_time}")
+    print(z)
 
 start_time = time.time()
 z = gpumatmul(to_js(x), to_js(y))
-end_time = time.time()            
+z = np.array(z.to_py())
+end_time = time.time()     
+
 print(f"The execution time of GPU is: {end_time-start_time}")
+
+print(z)
                 
     </py-repl>
     <div style="justify-content: right;display: flex;align-items: right;">

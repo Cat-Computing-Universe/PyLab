@@ -16,6 +16,10 @@ function gpumatmul(a, b) {
     }).setOutput([matSizeI, matSizeK])
 
     const result = multiplyMatrix(a, b, matSizeJ);
-    return result
-    // todo: convert to arrary?
+    array_result = []
+    for (let i = 0; i < result.length; i++) {
+        array_result.push(Array.from(result[i]))
+    }
+    console.log(array_result);
+    return array_result
 }
