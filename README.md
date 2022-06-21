@@ -12,7 +12,7 @@ PyLab natively supports Python, and all great science computing packages in it: 
 \* depends on our research and funding in the future.
 
 ## Demos
-* [GPU Acceleration](https://cat-computing-universe.github.io/PyLab/demo/matrix/gpu_accelerate.html) (*Notacibly another Web based computing platform get it wrong*)
+* [GPU Acceleration](https://cat-computing-universe.github.io/PyLab/demo/matrix/gpu_accelerate.html)
 * [REPL Playground](https://cat-computing-universe.github.io/PyLab/demo/repl.html)
 * More, see the [Front Page](https://cat-computing-universe.github.io/PyLab/)
 
