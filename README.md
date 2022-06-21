@@ -4,7 +4,7 @@ A **totally, totally, totally** no-install, no-download, no-config in-browser sc
 
 Please visit this website for demo:
 
-[CCU](https://cat-computing-universe.github.io/PyLab/)
+[CCU, CAT Computing Universe](https://cat-computing-universe.github.io/PyLab/)
 
 ## Life is short. Use Python. 
 PyLab natively supports Python, and all great science computing packages in it: Numpy, Scipy, Scikit-learn, Matplotlib, Pytorch(\*), Tensorflow(\*), etc. 
