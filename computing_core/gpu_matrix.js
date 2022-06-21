@@ -1,11 +1,19 @@
 function gpumatmul(a, b) {
+    // getting your GPU resource.
     const gpu = new GPU();
+
+    if (a.length === 0 || b.length === 0) {
+        throw new Error("Matrix dimension can not be zero");
+    }
 
     matSizeI = a.length;
     matSizeJ = a[0].length;
     matSizeK = b[0].length;
 
     // add error handling
+    if (matSizeJ !== b.length) {
+        throw new Error("Matrix size don't match.");
+    }
 
     const multiplyMatrix = gpu.createKernel(function (a, b, size) {
         let sum = 0;
@@ -15,11 +23,14 @@ function gpumatmul(a, b) {
         return sum;
     }).setOutput([matSizeI, matSizeK])
 
+    console.log("Performing matrix multiplication on GPU")
     const result = multiplyMatrix(a, b, matSizeJ);
     array_result = []
+
+    console.log("Performing result copying")
     for (let i = 0; i < result.length; i++) {
         array_result.push(Array.from(result[i]))
     }
-    console.log(array_result);
+
     return array_result
 }
