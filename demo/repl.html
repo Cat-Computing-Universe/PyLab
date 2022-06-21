@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
     <link rel="stylesheet" href="demo.css" />
     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="../core/gpu_matrix.js"></script>
     <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
   </head>
 
@@ -18,14 +19,16 @@
     - matplotlib
     - seaborn
     - scikit-learn
+    - paths:
+        - ../core/gpu_util.py
   </py-env>
 
   <body>
       <h1 class="font-semibold text-2xl ml-5">The Cat Computing Universe: PyLab</h1>
-      <div style="text-align: center">numpy, scipy and matplotlib all installed, may take longer. You can use Shift+Enter to run each cell.</div>
+      <div style="text-align: center">numpy, scipy, sklearn, seaborn and matplotlib all installed. It may take longer.</div>
       <div>
         <py-repl id="my-repl" auto-generate="true" std-out="output" std-err="err-div"> 
-print("Hello world!")
+print("Hello world!")  # You can use Shift+Enter (or Command+Enter) to run each cell.
         </py-repl>
       </div>
       <div style="justify-content: right;display: flex;align-items: right;">
