@@ -4,7 +4,7 @@ A **totally, totally, totally** no-install, no-download, no-config in-browser sc
 
 Please visit this website for demo:
 
-[CCU, The Cat Computing Universe](https://cat-computing-universe.github.io/PyLab/)
+[CCU, The Cat Computing Universe based on Python and supports GPU!](https://cat-computing-universe.github.io/PyLab/)
 
 ## Life is short. Use Python. 
 PyLab natively supports Python, and all great science computing packages in it: Numpy, Scipy, Scikit-learn, Matplotlib, Pytorch(\*), Tensorflow(\*), etc. 
