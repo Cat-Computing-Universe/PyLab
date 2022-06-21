@@ -1,3 +1,5 @@
+kGPUKernelLoopMaxIteration = 10000;
+
 function gpumatmul(a, b) {
     // getting your GPU resource.
     const gpu = new GPU();
@@ -21,7 +23,7 @@ function gpumatmul(a, b) {
             sum += a[this.thread.y][i] * b[i][this.thread.x];
         }
         return sum;
-    }).setOutput([matSizeK, matSizeI])
+    }).setLoopMaxIterations(kGPUKernelLoopMaxIteration).setOutput([matSizeK, matSizeI]);
 
     console.log("Performing matrix multiplication on GPU")
     const result = multiplyMatrix(a, b, matSizeJ);
