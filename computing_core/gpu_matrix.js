@@ -21,7 +21,7 @@ function gpumatmul(a, b) {
             sum += a[this.thread.y][i] * b[i][this.thread.x];
         }
         return sum;
-    }).setOutput([matSizeI, matSizeK])
+    }).setOutput([matSizeK, matSizeI])
 
     console.log("Performing matrix multiplication on GPU")
     const result = multiplyMatrix(a, b, matSizeJ);
