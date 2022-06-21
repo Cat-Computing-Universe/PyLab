@@ -24,6 +24,5 @@ PyLab backend is powered by Pyodide (the same backend that supports PyScript), l
 PyLab GPU is based on GPU.js, a project lead by [GPU Rocks](https://gpu.rocks/#/)
 
 ![](imgs/pyscript.png)
-![](imgs/pyodide.png)
 ![](imgs/gpujs.png)
 
