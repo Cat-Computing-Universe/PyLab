@@ -10,6 +10,7 @@ Please visit this website for demo:
 PyLab natively supports Python, and all great science computing packages in it: Numpy, Scipy, Scikit-learn, Matplotlib, Pytorch(\*), Tensorflow(\*), etc. 
 
 ## Demos
+* [GPU Acceleration](https://bboczeng.github.io/PyLab/demo/matrix/gpu_accelerate.html)
 * [REPL Playground](https://bboczeng.github.io/PyLab/demo/repl.html)
 
 ## Acknowledgments 
