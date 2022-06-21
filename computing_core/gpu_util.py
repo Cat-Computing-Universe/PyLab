@@ -8,4 +8,4 @@ def gmm(a, b, to_numpy=False):
     if to_numpy:
         return np.array(result.to_py())
 
-    return result
+    return result.to_py()
